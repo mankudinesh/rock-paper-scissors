@@ -1,0 +1,86 @@
+body{
+               background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+
+                color:white;
+                font-family:Arial;
+               
+
+               
+                
+            }
+            .title{
+                font-size:30px;
+                font-weight:bold;
+            }
+            .move-icon{
+                height:50px;
+            }
+    .move-button {
+     background-color: rgba(255, 255, 255, 0.05);
+    border: 3px solid #00f7ff;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.move-button:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 20px #00f7ff;
+}
+  /* .move-button{
+                background-color:transparent;
+                border:3px solid white;
+                height:120px;
+                width:120px;
+                border-radius:60px;
+                margin-right:10px;
+                cursor:pointer;
+                transition:transform 0.2s;
+            }
+            .move-button:hover{
+                transform:scale(1.1);
+            } */        
+            .result{
+                font-size:25px;
+                font-weight:bold;
+                margin-top:50px;
+            }
+            .score{
+                margin-top:60px;
+            }
+            .reset-score-button{
+                background-color:white;
+                border:none;
+                padding:8px 15px;
+                font-size:15px;
+                cursor:pointer;
+            }
+            .reset-score-button:hover{
+                background-color:#255ed7;
+                color:white;
+            }
+            .game-area{
+                display:grid;
+                grid-template-columns:120px 120px 120px;
+                column-gap:20px;
+                
+            }
+           
+        @media (max-width:300px){
+            .game-area{
+                grid-template-columns:120px 120px;
+            }
+        }
+        @media (min-width:1000px){
+            .game-area{
+                grid-template-columns:120px 120px 120px;
+            }
+        }
+        @media (min-width:301px) and (max-width:999) {
+            .game-area{
+                grid-template-columns:120px 120px 120px;
+            }
+        }
