@@ -117,4 +117,26 @@ let score = JSON.parse(localStorage.getItem('score')) || {
             document.querySelector('.js-score')
         .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses},
          Ties: ${score.ties}`;
+
         }
+        let isAutoPlaying = false;
+        let intervalId;
+        function autoPlay()
+        {
+          
+           if(!isAutoPlaying)
+            {
+            intervalId = setInterval(function(){
+                const playerMove = pickComputerMove();
+               playGame(playerMove); 
+               isAutoPlaying = true;
+            },2000);
+          }
+            else{
+                clearInterval(intervalId);
+                isAutoPlaying = false;
+            }
+    }
+
+
+
