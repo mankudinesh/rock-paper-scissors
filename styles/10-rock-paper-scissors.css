@@ -51,14 +51,14 @@ body{
             .score{
                 margin-top:60px;
             }
-            .reset-score-button{
+            .reset-score-button,.auto-play-button{
                 background-color:white;
                 border:none;
                 padding:8px 15px;
                 font-size:15px;
                 cursor:pointer;
             }
-            .reset-score-button:hover{
+            .reset-score-button:hover,.auto-play-button:hover{
                 background-color:#255ed7;
                 color:white;
             }
@@ -85,5 +85,6 @@ body{
             }
 
         }
+
 
 
